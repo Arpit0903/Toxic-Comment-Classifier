@@ -27,11 +27,6 @@ vectorizer = TfidfVectorizer(strip_accents='unicode',analyzer='word',ngram_range
 vectorizer.fit(xtrain)
 vectorizer.fit(xtest)
 
-#test = np.array(['fucking piece of shit suck my dick','your face is so ugly that i feel like vomitting'])
-#vectorizer.fit(test)
-#testit = vectorizer.transform(test)
-#testit = testit.reshape(1,1)
-
 x_train = vectorizer.transform(xtrain)
 x_test = vectorizer.transform(xtest)
 
